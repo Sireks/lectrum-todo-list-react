@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&subset=cyrillic');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--color-bg-dark-gray);
+    font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+    font-size: 12px;
+    font-variant-ligatures: none;
+
+    font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+img {
+    /* Дублирует функционал background-size: cover; только для тега img (не работает в "ie" и "edge") */
+    object-fit: cover;
+}
+
+img,
+svg {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+textarea,
+input {
+    font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    outline: none;
+}

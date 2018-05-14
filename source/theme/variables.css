@@ -1,0 +1,46 @@
+:root {
+    /* Base Colors */
+    --color-white: #fff;
+    --color-gray: #dddddd;
+
+    /* Action colors */
+    --color-blue: #5278e8;
+    --color-blue-light: #9cb5ff;
+
+    /* Text colors */
+    --color-text-black: #505050;
+    --color-text-gray: #aaaaaa;
+
+    /* Background colors */
+    --color-bg-dark-gray: #464646;
+    --color-bg-blue: #5278e8;
+
+
+    /* Shadows */
+    --color-shadows: rgba(0,0,0,0.2);
+
+
+    /* Animation cubic */
+    --cubic1: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    --cubic2: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+
+
+
+
+
+    --paletteColor1: #000;
+    --paletteColor2: #fff;
+    --paletteColor3: #3b8ef3;
+    --paletteColor4: #f5f5f5;
+    --paletteColor5: #313b3d;
+    --paletteColor6: #cccccc;
+    --paletteColor7: #363636;
+    --paletteColor8: #e4e4e4;
+    --paletteColor9: #656565;
+    --paletteColor10: #f25a41;
+    --paletteColor11: #136BD6;
+
+    /* RGBA */
+    --rgbaColor1: rgba(0, 0, 0, 0.1);
+    --rgbaColor2: rgba(0, 0, 0, 0.2);
+}
