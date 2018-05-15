@@ -1,0 +1,110 @@
+.task {
+    background-color: var(--color-white);
+    border-radius: 4px;
+    box-shadow: 0 1px 3px 0 var(--color-shadows);
+    margin-bottom: 15px;
+    padding: 14px 15px;
+    transition: all .5s ease;
+
+    height: 44px;
+
+    position: relative;
+
+    &:hover {
+        box-shadow: 0 4px 6px 0 var(--color-shadows);
+    }
+
+    & span,
+    & form {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    & span {
+        line-height: 10px;
+        font-size: 13px;
+        font-weight: 300;
+        margin: 3px 40px 0 0;
+    }
+
+    & form {
+        position: relative;
+        width: 350px;
+    }
+
+    & input {
+        border: none;
+        outline: none;
+        height: 16px;
+        width: 100%;
+    }
+}
+
+.execution {
+    cursor: pointer;
+    margin: 2px 11px 0 0;
+
+    display: inline-block;
+    vertical-align: top;
+    height: 14px;
+    width: 14px;
+
+    &:before {
+        content: '';
+        background-color: transparent;
+        border: 3px solid var(--color-blue);
+        border-radius: 50%;
+        transition: all 0.2s ease;
+
+        display: block;
+        height: 7px;
+        width: 7px;
+    }
+
+    &:hover,
+    &.active {
+        &:before {
+            background-color: var(--color-blue);
+        }
+    }
+}
+
+.tools {
+    position: absolute;
+    top: 14px;
+    right: 15px;
+
+    & .favorite {
+        margin-right: 13px;
+        height: 16px;
+        width: 15px;
+    }
+
+    & .edit {
+        margin-right: 16px;
+    }
+
+    & .edit,
+    & .remove {
+        height: 13px;
+        width: 13px;
+    }
+
+    & .favorite,
+    & .edit,
+    & .remove {
+        cursor: pointer;
+
+        & path {
+            fill: #dddddd;
+            transition: all 0.2s ease;
+        }
+
+        &:hover,
+        &.active {
+            & path {
+                fill: #5278e8;
+            }
+        }
+    }
+}

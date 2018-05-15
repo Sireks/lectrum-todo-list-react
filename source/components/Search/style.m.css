@@ -1,0 +1,19 @@
+.search {
+    padding: 0 35px;
+    margin-bottom: 33px;
+
+    & input {
+        caret-color: rgba(0, 0, 0, 0.4);
+        color: var(--color-text-black);
+        font-size: 36px;
+        font-weight: 700;
+        height: 31px;
+        outline: none;
+        border: none;
+
+        &::placeholder {
+            color: var(--color-gray);
+            font-weight: 700;
+        }
+    }
+}

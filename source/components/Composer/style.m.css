@@ -1,0 +1,35 @@
+.newTask {
+    background-color: #eeeeee;
+    border-top: 1px solid #dddddd;
+
+    padding: 20px 35px 25px;
+
+    & form {
+        position: relative;
+        height: 30px;
+        width: 100%;
+    }
+
+    & input,
+    & button {
+        font-size: 12px;
+
+        height: 100%;
+    }
+
+    & input {
+        background-color: #ffffff;
+        border-radius: 4px 0 0 4px;
+        border: none;
+        padding: 0 15px;
+        width: calc(100% - 75px);
+    }
+
+    & button {
+        background-color: var(--color-blue);
+        border: none;
+        border-radius: 0 4px 4px 0;
+        color: white;
+        width: 75px;
+    }
+}
