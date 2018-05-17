@@ -32,30 +32,6 @@ export default class Task extends Component {
         this.handleRemove = ::this._handleRemove;
     }
 
-    shouldComponentUpdate (nextProps) {
-        const {
-            id,
-            completed,
-            favorite,
-            completeTask,
-            flagFavoriteTask,
-            removeTask,
-        } = this.props;
-
-        if (
-            id === nextProps.id &&
-            completed === nextProps.completed &&
-            favorite === nextProps.favorite &&
-            completeTask === nextProps.completeTask &&
-            flagFavoriteTask === nextProps.flagFavoriteTask &&
-            removeTask === nextProps.removeTask
-        ) {
-            return false;
-        }
-
-        return true;
-    }
-
     _handleToggleEditMode () {
         const { editing, currentTaskTitle, editableTaskTitle } = this.state;
 
@@ -111,7 +87,7 @@ export default class Task extends Component {
             <div className = { taskStyle }>
                 <div className = { TaskStyle.execution } onClick = { completeTask } />
 
-                {editing ? (
+                { editing ? (
                     <input
                         className = 'editable'
                         type = 'text'
