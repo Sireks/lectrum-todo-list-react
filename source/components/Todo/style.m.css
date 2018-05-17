@@ -15,10 +15,17 @@
     }
 
     & .list {
-        padding: 30px 35px;
+        height: 410px;
 
         position: relative;
-        height: 410px;
+        top: 0;
+        left: 0;
+
+        & > div {
+            padding: 30px 35px;
+            overflow-y: auto;
+            height: 100%;
+        }
 
         &:before,
         &:after {
@@ -31,17 +38,16 @@
 
             position: absolute;
             left: 0;
+            z-index: 1;
         }
 
         &:before {
-            /*background: linear-gradient(to bottom, white 10%, transparent);*/
-
+            background: linear-gradient(to bottom, white 10%, transparent);
             top: 0;
         }
 
         &:after {
-            /*background: linear-gradient(to top, white 10%, transparent);*/
-
+            background: linear-gradient(to top, white 10%, transparent);
             bottom: 0;
         }
     }

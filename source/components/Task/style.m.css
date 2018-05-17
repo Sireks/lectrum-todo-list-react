@@ -14,29 +14,19 @@
         box-shadow: 0 4px 6px 0 var(--color-shadows);
     }
 
-    & span,
-    & form {
+    & input {
+        border: 0;
+        border-bottom: 1px solid transparent;
+        outline: none;
+        transition: all .2s ease;
+
         display: inline-block;
         vertical-align: top;
-    }
-
-    & span {
-        line-height: 10px;
-        font-size: 13px;
-        font-weight: 300;
-        margin: 3px 40px 0 0;
-    }
-
-    & form {
-        position: relative;
-        width: 350px;
-    }
-
-    & input {
-        border: none;
-        outline: none;
         height: 16px;
-        width: 100%;
+        width: 360px;
+
+        position: relative;
+        top: 1px;
     }
 }
 
@@ -61,8 +51,7 @@
         width: 7px;
     }
 
-    &:hover,
-    &.active {
+    &:hover {
         &:before {
             background-color: var(--color-blue);
         }
@@ -105,6 +94,51 @@
             & path {
                 fill: #5278e8;
             }
+        }
+    }
+}
+
+.editing {
+    & .tools {
+        & .edit {
+            & path {
+                fill: var(--color-blue);
+            }
+        }
+    }
+
+    & input {
+        border-bottom: 1px solid var(--color-gray);
+    }
+}
+
+.favorite {
+    & .tools {
+        & .favorite {
+            & path {
+                fill: var(--color-blue);
+            }
+        }
+    }
+}
+
+.completed {
+    & input {
+        color: #aaaaaa;
+        text-decoration: line-through;
+    }
+
+    & .execution {
+        &:before {
+            background-color: var(--color-blue);
+            border: 3px solid var(--color-blue);
+        }
+    }
+
+    &.editing {
+        & input {
+            color: var(--color-bg-dark-gray);
+            text-decoration: none;
         }
     }
 }
